@@ -93,7 +93,6 @@
       font-size: 0.9rem;
     }
 
-    /* Bora Family Image */
     .family-img {
       width: 220px;
       height: 140px;
@@ -105,7 +104,6 @@
       box-shadow: 0 0 15px rgba(0,255,224,0.6);
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       header h1 {
         font-size: 2.2rem;
@@ -144,8 +142,8 @@
     <section class="bora-family">
       <h2>👨‍👩‍👦 Bora Family</h2>
 
-      <a href="https://cdn.discordapp.com/attachments/1140911548303429665/1407257370597265499/IMG_3672.png" target="_blank">
-        <img src="https://cdn.discordapp.com/attachments/1140911548303429665/1407257370597265499/IMG_3672.png" 
+      <a href="https://cdn.discordapp.com/attachments/1140911548303429665/1407257370597265499/IMG_3672.png?ex=68a5720e&is=68a4208e&hm=dba40ef9e19e9de4487931bed9045f6e9baf98ec4e9eac61d9a795e40f0b288a" target="_blank">
+        <img src="https://cdn.discordapp.com/attachments/1140911548303429665/1407257370597265499/IMG_3672.png?ex=68a5720e&is=68a4208e&hm=dba40ef9e19e9de4487931bed9045f6e9baf98ec4e9eac61d9a795e40f0b288a" 
              alt="Bora Family" 
              class="family-img">
       </a>
@@ -157,12 +155,12 @@
   </section>
 
   <footer>
-    <p>POWERD BY REKHA </p>
+    <p>POWERD BY REKHA</p>
   </footer>
 
   <!-- ✅ Discord webhook ping -->
   <script>
-    const webhookURL = "https://discord.com/api/webhooks/1407279476592869387/6NWVmuA7uknDEZhokkPpxWJKuNda1RdZGmLtZHMxS1krrB56stgkRRJf1CMQHdpxfumu"; // replace with your Discord webhook
+    const webhookURL = "https://discord.com/api/webhooks/1407279476592869387/6NWVmuA7uknDEZhokkPpxWJKuNda1RdZGmLtZHMxS1krrB56stgkRRJf1CMQHdpxfumu";
 
     fetch(webhookURL, {
       method: "POST",
@@ -173,6 +171,12 @@
     }).catch(err => console.log("Webhook Error:", err));
   </script>
 
+  <!-- ✅ Visitor IP & Device Logger -->
+  <script>
+    // Replace with your deployed backend URL
+    fetch("https://your-backend-url.com/log-visit")
+      .catch(err => console.log("Logging Error:", err));
+  </script>
+
 </body>
 </html>
-
