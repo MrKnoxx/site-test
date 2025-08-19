@@ -2,25 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Knoxx — Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knoxx | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0a0a0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: radial-gradient(circle at top, #111, #000);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffe0;
+      text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff3af2;
+      text-shadow: 0 0 5px #ff3af2, 0 0 10px #ff3af2;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .tools ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .tools li {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tools li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00ffe0;
+    }
+
+    .tools strong {
+      color: #7df9ff;
+      text-shadow: 0 0 5px #7df9ff;
+    }
+
+    .contact a {
+      color: #00ffe0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #ff3af2;
+      text-shadow: 0 0 10px #ff3af2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
+
+  <header>
     <h1>🔥 Knoxx</h1>
     <p>Student • Builder of cool tools & experiments</p>
   </header>
 
-  <section id="about" class="section about">
-    <h2>👨‍🎓 About Me</h2>
-    <p>
-      Hi, I’m <strong>Knoxx</strong> — a curious student who loves building tools and exploring new tech.  
-      I enjoy experimenting with backend coding, automation, and creative projects that push my learning forward.
-    </p>
+  <section class="about">
+    <h2>👨‍💻 About Me</h2>
+    <p>Hi, I’m <strong>Knoxx</strong> — a curious student who loves building tools and exploring new tech. I enjoy experimenting with backend coding, automation, and creative projects that push my learning forward.</p>
   </section>
 
-  <section id="projects" class="section projects">
+  <section class="tools">
     <h2>🛠 Tools I Built</h2>
     <ul>
       <li><strong>Number Spy</strong> — A utility for looking up and analyzing phone numbers.</li>
@@ -28,16 +124,19 @@
     </ul>
   </section>
 
-  <section id="contact" class="section contact">
+  <section class="contact">
     <h2>📬 Contact Me</h2>
     <p>Email: <a href="mailto:knoxxop77@gmail.com">knoxxop77@gmail.com</a></p>
     <p>Discord: <code>its_knoxx</code></p>
   </section>
+  <h2> Bora Family</h2>
+  <p> Father <code> LATTU BORA</code></p>
+  <p> MOTHER <code> SONI BORA </code><p>
+  <p>SONS <code>SAMARJIT BORA AND SAMJJUAL BORA </code></p>
 
-  <footer class="footer">
-    <p>&copy; 2025 Knoxx</p>
+  <footer>
+    <p>© 2025 Knoxx</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
